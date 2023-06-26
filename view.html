@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<title>View All</title>
+<link rel="stylesheet" href="../static/css/custstyle.css">
+<head>
+</head>
+<body background="../static/img/background2.jpeg">
+    <header>
+        <img src="../static/img/logo.png" width = 20% height =20%>
+        <div class = "head-tag">
+            <a href="first">LogOut </a>
+            <a href="search">Search Customer </a>
+            <a href="view">View Accounts</a>
+            <a href="add">Add Account</a>
+        </div>
+
+    </header>
+<h1>Customer Details</h1>
+<table border="1px">
+    <thead>
+        <tr>
+            <th>Accont Number</th>
+            <th>Customer Name</th>
+            <th>Amount</th>
+            <th>Account Type</th>
+            <th>Email</th>
+            <th>Action</th>
+          </tr>
+    </thead>
+    {%for row in sqldata%}
+
+    
+    <tr>
+        <td>{{row[0]}}</td>
+        <td>{{row[1]}}</td>
+        <td>{{row[2]}}</td>
+        <td>{{row[3]}}</td>
+        <td>{{row[4]}}</td>
+        <td><a href="#" class="btn btn-success">Edit</a>
+            <a href="#" class="btn btn-danger">Delete</a>
+        </td>
+    </tr>
+    {%endfor%}
+</table>
+</body>
+</html>

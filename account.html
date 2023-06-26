@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<title>Online Banking</title>
+<link rel="stylesheet" href="../static/css/style.css">
+<head>
+</head>
+<body background="../static/img/background2.jpeg">
+    <header>
+        <img src="../static/img/logo.png" width = 20% height =20%>
+        <div class = "head-tag">
+            <a href="first">LogOut </a>
+            <a href="search">Search Customer </a>
+            <a href="view">View Accounts</a>
+            <a href="add">Add Account</a>
+        </div>
+
+    </header>
+<h1>Add New Customer</h1>
+<form action='/read' method="post">
+    <table>
+        <tr>
+            <th>
+                Account Number
+            </th>
+            <td>
+                <input type="number" name="accountnumber">
+            </td>
+        </tr>
+        <tr></tr>
+                <tr>
+            <th>
+                Customer Name
+            </th>
+            <td>
+                <input type="text" name="customername">
+            </td>
+        </tr>
+        <tr></tr>
+                        <tr>
+            <th>
+                Amount
+            </th>
+            <td>
+                <input type="number" name="amount">
+            </td>
+        </tr>
+        <tr></tr>
+                        <tr>
+            <th>
+                Account Type
+            </th>
+            <td>
+                <input type="text" name="accounttype">
+                
+            </td>
+        </tr>
+        
+        <tr></tr>
+                        
+        <tr>
+            <th>
+                Email
+            </th>
+            <td>
+                <input type="text" name="email">
+            </td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <input type="submit">
+            </td>
+        </tr>
+    </table>
+   <h3 text-color="red"  >{{msgdata}}</h3>
+</form>
+
+</body>
+</html>

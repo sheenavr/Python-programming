@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background: "../static/img/background2.jpeg"
+}
+
+header{
+    background-color:aliceblue;
+}
+
+.head-tag{
+    float:right;
+    margin-top:  30px;
+    margin-right: 55px;
+}
+
+.head-tag a{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+text-decoration: none;
+color: black;
+border: 1px solid;
+border-color: blue;
+padding: 8px;
+margin-right: 8px;
+}
+
+h1{
+    color: black;
+}
+h2{
+    color: brown;
+
+}
+label{
+    width: 80px;
+    font-weight:bold;
+}
+input{
+    width :200px;
+    padding : 8px;
+    border: 1 px;
+    border-radius: 4px;
+}
+input[type="submit"]
+{
+    background-color: rgb(20, 147, 197);
+    color: black;
+    padding: 10px;
+}
+table {
+    width: 100%;
+   
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    
+  }
+  

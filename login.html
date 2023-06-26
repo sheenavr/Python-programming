@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<title>Login</title>
+<link rel="stylesheet" href="../static/css/style.css">
+<head>
+</head>
+<body background="../static/img/background2.jpeg">
+    <header>
+        <img src="../static/img/logo.png" width = 20% height =20%>
+        <div class = "head-tag">
+            
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+    </header>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>Login</h1>
+    <form action="/home" method="post" >
+        <table>
+            <tr>
+                <th>
+                    &nbsp;&nbsp;&nbsp;&nbsp;User Name
+                </th>
+                <td>
+                    <input type="text" name="username">
+                </td>
+            </tr>
+            <tr></tr>
+                    <tr>
+                <th>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Password
+                </th>
+                <td>
+                    <input type="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+
+</table>
+<br>
+<br>
+
+<h2 text-align="center" > {{msg}}</h2>
+    </form>
+</body>
+</html>
